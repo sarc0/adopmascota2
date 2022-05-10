@@ -19,13 +19,12 @@ html {
   box-sizing: border-box;
 }
 //inicio mobile
-
 //estilos compartidos por todas las páginas inicio
 //body
 body {
   background-color: map-get($map: $colores, $key: "verde-claro");
 }
-//navbar
+//inicio navbar
 .container-fluid,
 .navbar {
   background-color: map-get($map: $colores, $key: "verde-claro2");
@@ -51,14 +50,12 @@ body {
   }
 }
 //fin navbar
-
 //inicio main general
 main {
   background-color: #76b947;
   min-height: 100vh;
 }
 //fin main general
-
 //inicio footer
 footer {
   background-color: map-get($map: $colores, $key: "verde-claro2");
@@ -79,10 +76,7 @@ footer {
   }
 }
 //fin footer
-
 //estilos compartidos por todas las paginas fin
-
-//inicio main del index
 .tarjeta-contenedora {
   @include diseño(
     10px,
@@ -115,8 +109,6 @@ footer {
     text-shadow: black 1px 0 10px;
   }
 }
-//fin main del index
-
 .form-control {
   background-color: map-get($map: $colores, $key: "verde-claro2") !important;
   border: none;
@@ -145,5 +137,4 @@ footer {
 .contenedor-nosotros{
   min-height: 420px;
 }
-//fin main del adopta
 //fin mobile
