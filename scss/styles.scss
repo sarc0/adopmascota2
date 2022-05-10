@@ -1,16 +1,6 @@
 //inicio recursos de scss
-$colores: (
-  "verde-oscuro": #2f5233,
-  "verde-claro": #76b947,
-  "verde-claro2": #94c973,
-);
-@mixin diseño($border, $color, $bg-color, $margin, $padding) {
-  border-radius: $border;
-  color: $color;
-  background-color: $bg-color;
-  margin: $margin;
-  padding: $padding;
-}
+@import "variables";
+@import "mixins";
 //fin recursos scss
 html {
   border: 0;
