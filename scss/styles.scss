@@ -55,6 +55,9 @@ main {
   background-color: #76b947;
   min-height: 100vh;
 }
+.main-index{
+  text-align: center;
+}
 //fin main general
 //inicio footer
 footer {
@@ -95,6 +98,7 @@ footer {
   text-decoration: none;
   font-weight: bolder;
   font-size: 20px;
+  max-width: 110px;
   @include diseño(
     10px,
     map-get($map: $colores, $key: "verde-oscuro"),
