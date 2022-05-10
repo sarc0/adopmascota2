@@ -60,6 +60,12 @@ footer .footer-p-follow {
   background-color: #94c973;
   margin: 10px;
   padding: 20px;
+  min-height: 378px;
+}
+
+.tarjeta-contenedora p {
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .btn {
