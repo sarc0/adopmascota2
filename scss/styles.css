@@ -22,7 +22,6 @@ body {
 
 .navbar-nav .nav-item .nav-link {
   color: #2f5233;
-  font-weight: bolder;
   font-size: 20px;
   border-top: 1px solid #76b947;
 }
@@ -51,7 +50,6 @@ footer .logo p {
 
 footer .footer-p-follow {
   font-size: 24px;
-  font-weight: bolder;
 }
 
 .tarjeta-contenedora {
@@ -79,7 +77,43 @@ footer .footer-p-follow {
   padding: 20px;
 }
 
-.carousel-caption h3, .carousel-caption p {
+.carousel-caption h3,
+.carousel-caption p {
   text-shadow: black 1px 0 10px;
+}
+
+.form-control {
+  background-color: #94c973 !important;
+  border: none;
+  color: #2f5233;
+}
+
+.form-floating {
+  color: #2f5233;
+}
+
+.form-container {
+  width: 90%;
+  max-width: 500px;
+  min-height: 401px;
+  color: #2f5233;
+}
+
+.form-container-2 {
+  background-color: #94c973;
+  padding: 10px;
+}
+
+.form-select {
+  background-color: #94c973;
+  border: 1px solid #76b947;
+}
+
+.btn-form {
+  background-color: #94c973;
+}
+
+.contenedor-nosotros {
+  min-height: 420px;
 }
 /*# sourceMappingURL=styles.css.map */
