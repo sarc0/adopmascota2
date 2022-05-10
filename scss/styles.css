@@ -1,0 +1,75 @@
+html {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #76b947;
+}
+
+.container-fluid,
+.navbar {
+  background-color: #94c973;
+}
+
+.navbar-toggler {
+  background-color: #76b947;
+  border-color: #2f5233;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: #2f5233;
+  font-weight: bolder;
+  font-size: 20px;
+  border-top: 1px solid #76b947;
+}
+
+.navbar-brand span {
+  color: #2f5233;
+  font-size: 30px;
+  font-family: "Lobster", cursive;
+}
+
+main {
+  background-color: #76b947;
+  min-height: 100vh;
+}
+
+footer {
+  background-color: #94c973;
+  color: #2f5233;
+}
+
+footer .logo p {
+  font-size: 30px;
+  padding: 0;
+  font-family: "Lobster", cursive;
+}
+
+footer .footer-p-follow {
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.tarjeta-contenedora {
+  border-radius: 10px;
+  color: #2f5233;
+  background-color: #94c973;
+  margin: 10px;
+  padding: 20px;
+}
+
+.btn {
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 20px;
+  border-radius: 10px;
+  color: #2f5233;
+  background-color: #76b947;
+  margin: 10px;
+  padding: 20px;
+}
+/*# sourceMappingURL=styles.css.map */
