@@ -129,14 +129,19 @@ footer {
 }
 //fin mobile
 //inicio estilos xs para mejorar el iframe
-  @media (max-width:336px){
-    .tarjeta-contenedora{
-      iframe{
+@media (max-width: 336px) {
+  .tarjeta-contenedora {
+    iframe {
       max-width: 100%;
-      }
     }
   }
+}
 //fin estilos xs para mejorar el iframe
+@media (max-width: 1024px) {
+  .tarjeta-contenedora {
+    box-shadow: 5px 10px 18px #0a0a0a;
+  }
+}
 //inicio vista tablet
 
 @media (min-width: 768px) {
@@ -228,8 +233,8 @@ footer {
     animation-name: baja-tarjeta;
     animation-duration: 1s;
   }
-  footer{
-    a:hover{
+  footer {
+    a:hover {
       opacity: 0.9;
     }
   }

@@ -1,7 +1,7 @@
 @mixin diseño($border, $color, $bg-color, $margin, $padding) {
-    border-radius: $border;
-    color: $color;
-    background-color: $bg-color;
-    margin: $margin;
-    padding: $padding;
-  }
+  border-radius: $border;
+  color: $color;
+  background-color: $bg-color;
+  margin: $margin;
+  padding: $padding;
+}

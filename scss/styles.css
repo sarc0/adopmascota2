@@ -123,6 +123,13 @@ footer .footer-p-follow {
   }
 }
 
+@media (max-width: 1024px) {
+  .tarjeta-contenedora {
+    -webkit-box-shadow: 5px 10px 18px #0a0a0a;
+            box-shadow: 5px 10px 18px #0a0a0a;
+  }
+}
+
 @media (min-width: 768px) {
   .navbar-nav .nav-item .nav-link {
     border-top: none;
