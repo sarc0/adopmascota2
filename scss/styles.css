@@ -50,11 +50,18 @@ footer .logo p {
   padding: 0;
   font-family: "Lobster", cursive;
 }
-
 footer .footer-p-follow {
   font-size: 24px;
 }
-
+footer a i {
+  font-size: 100px;
+}
+footer .fa-twitter, footer .fa-facebook, footer .fa-instagram {
+  color: #2f5233;
+}
+footer .fa-twitter:hover, footer .fa-facebook:hover, footer .fa-instagram:hover {
+  color: #212529;
+}
 .tarjeta-contenedora {
   border-radius: 10px;
   color: #2f5233;
@@ -67,7 +74,7 @@ footer .footer-p-follow {
   font-weight: bold;
 }
 
-.btn {
+.btn, .btn-form {
   text-decoration: none;
   font-weight: bolder;
   font-size: 20px;
@@ -113,6 +120,7 @@ footer .footer-p-follow {
 
 .btn-form {
   background-color: #94c973;
+  border: none;
 }
 
 @media (max-width: 336px) {
@@ -226,8 +234,8 @@ footer .footer-p-follow {
     animation-duration: 1s;
   }
 
-  footer a:hover {
-    opacity: 0.9;
+  .btn:hover, .btn-form:hover {
+    color: #212529;
   }
 }
 @keyframes sube-tarjeta {

@@ -62,10 +62,25 @@ footer {
       font-family: "Lobster", cursive;
     }
   }
-}
-footer {
   .footer-p-follow {
     font-size: 24px;
+  }
+  a{
+    i{
+      font-size: 100px;
+    }
+  }
+  .fa-twitter{
+    color: map-get($map: $colores, $key: "verde-oscuro");
+  }
+  .fa-twitter:hover{
+    color: #212529;
+  }
+  .fa-instagram{
+    @extend .fa-twitter;
+  }
+  .fa-facebook{
+    @extend .fa-twitter;
   }
 }
 //fin footer
@@ -125,7 +140,9 @@ footer {
   border: 1px solid map-get($map: $colores, $key: "verde-claro");
 }
 .btn-form {
+  @extend .btn;
   background-color: map-get($map: $colores, $key: "verde-claro2");
+  border: none;
 }
 //fin mobile
 //inicio estilos xs para mejorar el iframe
@@ -139,7 +156,7 @@ footer {
 //fin estilos xs para mejorar el iframe
 @media (max-width: 1024px) {
   .tarjeta-contenedora {
-    box-shadow: 5px 10px 18px #0a0a0a;
+    box-shadow: $sombra-caja;
   }
 }
 //inicio vista tablet
@@ -171,7 +188,7 @@ footer {
     margin: auto;
     max-height: 426px;
     max-width: 640px;
-    box-shadow: 5px 10px 18px #0a0a0a;
+    box-shadow: $sombra-caja;
     img {
       max-height: 426px;
       max-width: 640px;
@@ -227,16 +244,14 @@ footer {
     animation-name: sube-tarjeta;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-    box-shadow: 5px 10px 18px #0a0a0a;
+    box-shadow: $sombra-caja;
   }
   .tarjeta-contenedora:not(:hover) {
     animation-name: baja-tarjeta;
     animation-duration: 1s;
   }
-  footer {
-    a:hover {
-      opacity: 0.9;
-    }
+  .btn:hover {
+    color: #212529;
   }
 }
 //fin vista desktop
