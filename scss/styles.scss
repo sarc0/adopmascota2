@@ -14,24 +14,24 @@ html {
 //body
 body {
   background-color: map-get($map: $colores, $key: "verde-claro");
-  .contenedor-titulo{
-    h1{
+  .contenedor-titulo {
+    h1 {
       color: map-get($map: $colores, $key: "verde-oscuro");
-      text-align: center
+      text-align: center;
     }
-    p{
+    p {
       @extend h1;
       font-style: italic;
       font-size: 18px;
     }
   }
 }
-.main-contacto{
-  .tco-1{
-    h2{
+.main-contacto {
+  .tco-1 {
+    h2 {
       text-align: center;
     }
-    p{
+    p {
       font-style: italic;
     }
   }
@@ -171,14 +171,14 @@ footer {
   .tarjeta-contenedora {
     box-shadow: $sombra-caja;
   }
-  .tco-0{
+  .tco-0 {
     box-shadow: none;
   }
-  .tco-1{
-    h2{
+  .tco-1 {
+    h2 {
       text-align: center;
     }
-    p{
+    p {
       text-align: center;
     }
   }
