@@ -14,6 +14,27 @@ html {
 //body
 body {
   background-color: map-get($map: $colores, $key: "verde-claro");
+  .contenedor-titulo{
+    h1{
+      color: map-get($map: $colores, $key: "verde-oscuro");
+      text-align: center
+    }
+    p{
+      @extend h1;
+      font-style: italic;
+      font-size: 18px;
+    }
+  }
+}
+.main-contacto{
+  .tco-1{
+    h2{
+      text-align: center;
+    }
+    p{
+      font-style: italic;
+    }
+  }
 }
 //inicio navbar
 .container-fluid,
@@ -30,6 +51,7 @@ body {
       color: map-get($map: $colores, $key: "verde-oscuro");
       font-size: 20px;
       border-top: 1px solid map-get($map: $colores, $key: "verde-claro");
+      font-weight: bold;
     }
   }
 }
@@ -65,21 +87,21 @@ footer {
   .footer-p-follow {
     font-size: 24px;
   }
-  a{
-    i{
+  a {
+    i {
       font-size: 100px;
     }
   }
-  .fa-twitter{
+  .fa-twitter {
     color: map-get($map: $colores, $key: "verde-oscuro");
   }
-  .fa-twitter:hover{
+  .fa-twitter:hover {
     color: #212529;
   }
-  .fa-instagram{
+  .fa-instagram {
     @extend .fa-twitter;
   }
-  .fa-facebook{
+  .fa-facebook {
     @extend .fa-twitter;
   }
 }
@@ -145,18 +167,20 @@ footer {
   border: none;
 }
 //fin mobile
-//inicio estilos xs para mejorar el iframe
-@media (max-width: 336px) {
-  .tarjeta-contenedora {
-    iframe {
-      max-width: 100%;
-    }
-  }
-}
-//fin estilos xs para mejorar el iframe
 @media (max-width: 1024px) {
   .tarjeta-contenedora {
     box-shadow: $sombra-caja;
+  }
+  .tco-0{
+    box-shadow: none;
+  }
+  .tco-1{
+    h2{
+      text-align: center;
+    }
+    p{
+      text-align: center;
+    }
   }
 }
 //inicio vista tablet
