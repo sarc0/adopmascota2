@@ -9,8 +9,7 @@ html {
 body {
   background-color: #76b947;
 }
-body .contenedor-titulo h1,
-body .contenedor-titulo p {
+body .contenedor-titulo h1, body .contenedor-titulo p {
   color: #2f5233;
   text-align: center;
 }
@@ -73,14 +72,10 @@ footer .footer-p-follow {
 footer a i {
   font-size: 100px;
 }
-footer .fa-twitter,
-footer .fa-facebook,
-footer .fa-instagram {
+footer .fa-twitter, footer .fa-facebook, footer .fa-instagram {
   color: #2f5233;
 }
-footer .fa-twitter:hover,
-footer .fa-facebook:hover,
-footer .fa-instagram:hover {
+footer .fa-twitter:hover, footer .fa-facebook:hover, footer .fa-instagram:hover {
   color: #212529;
 }
 .tarjeta-contenedora {
@@ -95,8 +90,7 @@ footer .fa-instagram:hover {
   font-weight: bold;
 }
 
-.btn,
-.btn-form {
+.btn, .btn-form {
   text-decoration: none;
   font-weight: bolder;
   font-size: 20px;
@@ -262,8 +256,7 @@ footer .fa-instagram:hover {
     animation-duration: 1s;
   }
 
-  .btn:hover,
-  .btn-form:hover {
+  .btn:hover, .btn-form:hover {
     color: #212529;
   }
 }
@@ -282,6 +275,9 @@ footer .fa-instagram:hover {
   100% {
     transform: translateY(0px);
   }
+}
+h1, body .contenedor-titulo p, h2, h3 {
+  line-height: 1.1;
 }
 
 /*# sourceMappingURL=styles.css.map */
