@@ -33,6 +33,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../scss/styles.css" />
   </head>
   <header id="inicio">
@@ -60,7 +61,13 @@
               <a class="nav-link" href="../pages/ayuda.html">Ayúdanos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" style="color: #212529"; href="../pages/contacto.html">Contáctanos</a>
+              <a
+                class="nav-link"
+                style="color: #212529"
+                ;
+                href="../pages/contacto.html"
+                >Contáctanos</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../pages/quienes.html">Quiénes somos</a>
@@ -78,7 +85,7 @@
       </p>
     </div>
     <main class="main-contacto">
-      <div class="tarjeta-contenedora tco-0">
+      <div data-aos="fade-right" class="tarjeta-contenedora tco-0">
         <h2 class="d-flex justify-content-center mb-3">Contáctanos</h2>
         <div class="d-flex justify-content-center">
           <img src="../images/telefono.png" alt="telefono" />
@@ -93,7 +100,7 @@
         </div>
         <p class="d-flex justify-content-center">contacto@adopmascota.ar</p>
       </div>
-      <div class="form-container m-auto tco-1">
+      <div data-aos="fade-left" class="form-container m-auto tco-1">
         <h2 class="d-flex justify-content-center mt-2">
           Completá el formulario
         </h2>
@@ -181,5 +188,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

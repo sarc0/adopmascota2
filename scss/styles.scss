@@ -24,6 +24,8 @@ body {
       font-style: italic;
       font-size: 18px;
     }
+    background-image: url(../images/wave.svg);
+    min-height: 300px;
   }
 }
 .main-contacto {
@@ -264,39 +266,14 @@ footer {
 //fin vista tablet
 //inicio vista desktop
 @media (min-width: 1025px) {
-  .tarjeta-contenedora:hover {
-    animation-name: sube-tarjeta;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    box-shadow: $sombra-caja;
-  }
-  .tarjeta-contenedora:not(:hover) {
-    animation-name: baja-tarjeta;
-    animation-duration: 1s;
-  }
   .btn:hover {
     color: #212529;
   }
 }
 //fin vista desktop
-//inicio animaciones
-@keyframes sube-tarjeta {
-  0% {
-    transform: translateY(0%);
-  }
-  100% {
-    transform: translateY(-5px);
-  }
-}
-@keyframes baja-tarjeta {
-  0% {
-    transform: translateY(-5px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-//fin animaciones
-h1,h2,h3{
+h1,
+h2,
+h3 {
   line-height: 1.1;
 }
+

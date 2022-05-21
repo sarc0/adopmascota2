@@ -33,6 +33,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../scss/styles.css" />
   </head>
   <header id="inicio">
@@ -81,7 +82,7 @@
       <p class="d-flex justify-content-center">Completá el formulario</p>
     </div>
     <main class="main-adopta">
-      <div class="form-container m-auto ta-0">
+      <div data-aos="fade-right" class="form-container m-auto ta-0">
         <h2 class="d-flex justify-content-center mt-2">Datos personales</h2>
         <div class="form-floating mb-3 mt-3">
           <input
@@ -143,7 +144,10 @@
           <label for="direccion">Dirección</label>
         </div>
       </div>
-      <div class="form-container m-auto form-container-2 mb-3 mt-3 ta-1">
+      <div
+        data-aos="fade-left"
+        class="form-container m-auto form-container-2 mb-3 mt-3 ta-1"
+      >
         <h2 class="d-flex justify-content-center mt-2">Datos generales</h2>
         <h4>Elige una mascota</h4>
         <div class="form-check">
@@ -211,7 +215,9 @@
         </div>
       </div>
       <div class="d-flex justify-content-center ta-2">
-        <button type="submit" class="btn-form">Enviar</button>
+        <button type="submit" data-aos="fade-up" class="btn-form">
+          Enviar
+        </button>
       </div>
     </main>
     <footer>
@@ -250,5 +256,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

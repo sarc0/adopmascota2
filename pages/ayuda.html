@@ -33,6 +33,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../scss/styles.css" />
   </head>
   <header id="inicio">
@@ -57,7 +58,12 @@
               <a class="nav-link" href="../pages/adopta.html">Adopta</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" style="color: #212529;" href="../pages/ayuda.html">Ayúdanos</a>
+              <a
+                class="nav-link"
+                style="color: #212529"
+                href="../pages/ayuda.html"
+                >Ayúdanos</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../pages/contacto.html">Contáctanos</a>
@@ -76,7 +82,7 @@
       <p class="d-flex justify-content-center">Mirá todo lo que podés hacer</p>
     </div>
     <main class="main-ayuda">
-      <div class="tarjeta-contenedora mb-3 th-0">
+      <div data-aos="fade-right" class="tarjeta-contenedora mb-3 th-0">
         <h2 class="d-flex justify-content-center mb-3">Roles</h2>
         <div class="d-flex justify-content-center">
           <img src="../images/veterinario.png" alt="Veterinario" />
@@ -91,7 +97,7 @@
         </div>
         <p class="d-flex justify-content-center">Patrocinador</p>
       </div>
-      <div class="tarjeta-contenedora mb-3 th-1">
+      <div data-aos="fade-left" class="tarjeta-contenedora mb-3 th-1">
         <h2 class="d-flex justify-content-center mb-3">Si tenés</h2>
         <p class="d-flex justify-content-center align-items-center">
           <i class="fa-solid fa-paw"></i>Amor por los animales
@@ -147,5 +153,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
