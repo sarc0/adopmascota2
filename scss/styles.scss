@@ -13,6 +13,7 @@ html {
 //estilos compartidos por todas las páginas inicio
 //body
 body {
+  overflow-x: hidden;
   background-color: map-get($map: $colores, $key: "verde-claro");
   .contenedor-titulo {
     h1 {
