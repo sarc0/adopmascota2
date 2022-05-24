@@ -14,7 +14,8 @@ body .contenedor-titulo {
   background-image: url(../images/wave.svg);
   min-height: 300px;
 }
-body .contenedor-titulo h1, body .contenedor-titulo p {
+body .contenedor-titulo h1,
+body .contenedor-titulo p {
   color: #2f5233;
   text-align: center;
 }
@@ -77,10 +78,14 @@ footer .footer-p-follow {
 footer a i {
   font-size: 100px;
 }
-footer .fa-twitter, footer .fa-facebook, footer .fa-instagram {
+footer .fa-twitter,
+footer .fa-facebook,
+footer .fa-instagram {
   color: #2f5233;
 }
-footer .fa-twitter:hover, footer .fa-facebook:hover, footer .fa-instagram:hover {
+footer .fa-twitter:hover,
+footer .fa-facebook:hover,
+footer .fa-instagram:hover {
   color: #212529;
 }
 .tarjeta-contenedora {
@@ -95,7 +100,8 @@ footer .fa-twitter:hover, footer .fa-facebook:hover, footer .fa-instagram:hover 
   font-weight: bold;
 }
 
-.btn, .btn-form {
+.btn,
+.btn-form {
   text-decoration: none;
   font-weight: bolder;
   font-size: 20px;
@@ -249,11 +255,13 @@ footer .fa-twitter:hover, footer .fa-facebook:hover, footer .fa-instagram:hover 
   }
 }
 @media (min-width: 1025px) {
-  .btn:hover, .btn-form:hover {
+  .btn:hover,
+  .btn-form:hover {
     color: #212529;
   }
 }
-h1, body .contenedor-titulo p,
+h1,
+body .contenedor-titulo p,
 h2,
 h3 {
   line-height: 1.1;
