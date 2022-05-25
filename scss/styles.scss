@@ -170,6 +170,22 @@ footer {
   border: none;
 }
 //fin mobile
+@media (max-width:767px){
+  .presentacion{
+    background-image: url("../images/wave2.svg");
+    color: map-get($map: $colores, $key: "verde-oscuro");
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+    p{
+      font-style: italic;
+      font-size: 18px;
+    }
+  }
+}
 @media (max-width: 1024px) {
   .tarjeta-contenedora {
     box-shadow: $sombra-caja;
@@ -208,8 +224,25 @@ footer {
     display: grid;
     grid-template-areas:
       "tc-0 tc-1"
-      "carousel carousel"
+      "presentacion-galeria presentacion-galeria"
       "tc-2 tc-3";
+      .contenedor-presentacion-galeria{
+        display: flex;
+        grid-area: presentacion-galeria;
+        background-image: url("../images/wave2.svg");
+        .presentacion{
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          color: map-get($map: $colores, $key:"verde-oscuro" );
+          p{
+            font-size: 18px;
+            font-style: italic;
+          }
+        }
+      }
   }
   .carousel {
     margin: auto;
