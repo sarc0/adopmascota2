@@ -128,6 +128,7 @@ footer {
   font-weight: bolder;
   font-size: 20px;
   max-width: 110px;
+  border: none!important;
   @include diseño(
     10px,
     map-get($map: $colores, $key: "verde-oscuro"),
@@ -135,6 +136,9 @@ footer {
     10px,
     20px
   );
+}
+.btn:active,.btn:focus{
+  box-shadow: none;
 }
 .carousel-caption {
   h3,
@@ -167,11 +171,6 @@ footer {
 .btn-form {
   @extend .btn;
   background-color: map-get($map: $colores, $key: "verde-claro2");
-  border: none;
-}
-.mt-3:active{
-  border: none!important;
-  box-shadow: none!important;
 }
 //fin mobile
 @media (max-width:767px){
@@ -212,10 +211,6 @@ footer {
         border-top: none;
       }
     }
-  }
-  .mt-3:active{
-    border: none!important;
-    box-shadow: none!important;
   }
   .main-index {
     @for $i from 0 through 3 {

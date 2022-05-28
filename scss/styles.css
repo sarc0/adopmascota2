@@ -100,11 +100,16 @@ footer .fa-twitter:hover, footer .fa-facebook:hover, footer .fa-instagram:hover 
   font-weight: bolder;
   font-size: 20px;
   max-width: 110px;
+  border: none !important;
   border-radius: 10px;
   color: #2f5233;
   background-color: #76b947;
   margin: 10px;
   padding: 20px;
+}
+
+.btn:active, .btn-form:active, .btn:focus, .btn-form:focus {
+  box-shadow: none;
 }
 
 .carousel-caption h3,
@@ -141,12 +146,6 @@ footer .fa-twitter:hover, footer .fa-facebook:hover, footer .fa-instagram:hover 
 
 .btn-form {
   background-color: #94c973;
-  border: none;
-}
-
-.mt-3:active {
-  border: none !important;
-  box-shadow: none !important;
 }
 
 @media (max-width: 767px) {
@@ -180,11 +179,6 @@ footer .fa-twitter:hover, footer .fa-facebook:hover, footer .fa-instagram:hover 
 @media (min-width: 768px) {
   .navbar-nav .nav-item .nav-link {
     border-top: none;
-  }
-
-  .mt-3:active {
-    border: none !important;
-    box-shadow: none !important;
   }
 
   .main-index {
