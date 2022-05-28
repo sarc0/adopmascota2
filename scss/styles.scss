@@ -128,7 +128,7 @@ footer {
   font-weight: bolder;
   font-size: 20px;
   max-width: 110px;
-  border: none!important;
+  border: none !important;
   @include diseño(
     10px,
     map-get($map: $colores, $key: "verde-oscuro"),
@@ -137,7 +137,8 @@ footer {
     20px
   );
 }
-.btn:active,.btn:focus{
+.btn:active,
+.btn:focus {
   box-shadow: none;
 }
 .carousel-caption {
@@ -173,8 +174,8 @@ footer {
   background-color: map-get($map: $colores, $key: "verde-claro2");
 }
 //fin mobile
-@media (max-width:767px){
-  .presentacion{
+@media (max-width: 767px) {
+  .presentacion {
     background-image: url("../images/wave2.svg");
     color: map-get($map: $colores, $key: "verde-oscuro");
     min-height: 250px;
@@ -183,7 +184,7 @@ footer {
     justify-content: end;
     align-items: center;
     text-align: center;
-    p{
+    p {
       font-style: italic;
       font-size: 18px;
     }
@@ -223,23 +224,23 @@ footer {
       "tc-0 tc-1"
       "presentacion-galeria presentacion-galeria"
       "tc-2 tc-3";
-      .contenedor-presentacion-galeria{
+    .contenedor-presentacion-galeria {
+      display: flex;
+      grid-area: presentacion-galeria;
+      background-image: url("../images/wave2.svg");
+      .presentacion {
         display: flex;
-        grid-area: presentacion-galeria;
-        background-image: url("../images/wave2.svg");
-        .presentacion{
-          display: flex;
-          flex-direction: column;
-          text-align: center;
-          justify-content: center;
-          align-items: center;
-          color: map-get($map: $colores, $key:"verde-oscuro" );
-          p{
-            font-size: 18px;
-            font-style: italic;
-          }
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        color: map-get($map: $colores, $key: "verde-oscuro");
+        p {
+          font-size: 18px;
+          font-style: italic;
         }
       }
+    }
   }
   .carousel {
     margin: auto;
@@ -307,7 +308,9 @@ h2,
 h3 {
   line-height: 1.1;
 }
-.form-control:focus,.form-select:focus {
+.form-control:focus,
+.form-select:focus {
   border-color: map-get($map: $colores, $key: verde-oscuro);
-  box-shadow: inset 0 2px 2px map-get($map: $colores, $key: verde-claro2), 0 0 8px map-get($map: $colores, $key: verde-oscuro );
+  box-shadow: inset 0 2px 2px map-get($map: $colores, $key: verde-claro2),
+    0 0 8px map-get($map: $colores, $key: verde-oscuro);
 }
