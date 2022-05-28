@@ -99,7 +99,7 @@ footer {
     color: map-get($map: $colores, $key: "verde-oscuro");
   }
   .fa-twitter:hover {
-    color: #212529;
+    color: map-get($map: $colores, $key: "negro-leve");
   }
   .fa-instagram {
     @extend .fa-twitter;
@@ -170,10 +170,23 @@ footer {
   border: none;
 }
 //fin mobile
-@media (max-width: 1024px) {
-  .tarjeta-contenedora {
-    box-shadow: $sombra-caja;
+@media (max-width:767px){
+  .presentacion{
+    background-image: url("../images/wave2.svg");
+    color: map-get($map: $colores, $key: "verde-oscuro");
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+    p{
+      font-style: italic;
+      font-size: 18px;
+    }
   }
+}
+@media (max-width: 1024px) {
   .tco-0 {
     box-shadow: none;
   }
@@ -202,14 +215,28 @@ footer {
         grid-area: tc-#{$i};
       }
     }
-    .carousel {
-      grid-area: carousel;
-    }
     display: grid;
     grid-template-areas:
       "tc-0 tc-1"
-      "carousel carousel"
+      "presentacion-galeria presentacion-galeria"
       "tc-2 tc-3";
+      .contenedor-presentacion-galeria{
+        display: flex;
+        grid-area: presentacion-galeria;
+        background-image: url("../images/wave2.svg");
+        .presentacion{
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          color: map-get($map: $colores, $key:"verde-oscuro" );
+          p{
+            font-size: 18px;
+            font-style: italic;
+          }
+        }
+      }
   }
   .carousel {
     margin: auto;
@@ -268,7 +295,7 @@ footer {
 //inicio vista desktop
 @media (min-width: 1025px) {
   .btn:hover {
-    color: #212529;
+    color: map-get($map: $colores, $key: "negro-leve");
   }
 }
 //fin vista desktop
@@ -276,4 +303,8 @@ h1,
 h2,
 h3 {
   line-height: 1.1;
+}
+.form-control:focus,.form-select:focus {
+  border-color: map-get($map: $colores, $key: verde-oscuro);
+  box-shadow: inset 0 2px 2px map-get($map: $colores, $key: verde-claro2), 0 0 8px map-get($map: $colores, $key: verde-oscuro );
 }
