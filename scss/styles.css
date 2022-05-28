@@ -161,10 +161,6 @@ footer .fa-twitter:hover, footer .fa-facebook:hover, footer .fa-instagram:hover 
   }
 }
 @media (max-width: 1024px) {
-  .tarjeta-contenedora {
-    box-shadow: 5px 10px 18px #0a0a0a;
-  }
-
   .tco-0 {
     box-shadow: none;
   }
@@ -196,9 +192,6 @@ footer .fa-twitter:hover, footer .fa-facebook:hover, footer .fa-instagram:hover 
   }
   .main-index .tc-3 {
     grid-area: tc-3;
-  }
-  .main-index .carousel {
-    grid-area: carousel;
   }
   .main-index .contenedor-presentacion-galeria {
     display: flex;

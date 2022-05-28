@@ -99,7 +99,7 @@ footer {
     color: map-get($map: $colores, $key: "verde-oscuro");
   }
   .fa-twitter:hover {
-    color: #212529;
+    color: map-get($map: $colores, $key: "negro-leve");
   }
   .fa-instagram {
     @extend .fa-twitter;
@@ -187,9 +187,6 @@ footer {
   }
 }
 @media (max-width: 1024px) {
-  .tarjeta-contenedora {
-    box-shadow: $sombra-caja;
-  }
   .tco-0 {
     box-shadow: none;
   }
@@ -217,9 +214,6 @@ footer {
       .tc-#{$i} {
         grid-area: tc-#{$i};
       }
-    }
-    .carousel {
-      grid-area: carousel;
     }
     display: grid;
     grid-template-areas:
@@ -301,7 +295,7 @@ footer {
 //inicio vista desktop
 @media (min-width: 1025px) {
   .btn:hover {
-    color: #212529;
+    color: map-get($map: $colores, $key: "negro-leve");
   }
 }
 //fin vista desktop
