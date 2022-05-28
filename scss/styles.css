@@ -144,6 +144,11 @@ footer .fa-twitter:hover, footer .fa-facebook:hover, footer .fa-instagram:hover 
   border: none;
 }
 
+.mt-3:active {
+  border: none !important;
+  box-shadow: none !important;
+}
+
 @media (max-width: 767px) {
   .presentacion {
     background-image: url("../images/wave2.svg");
@@ -175,6 +180,11 @@ footer .fa-twitter:hover, footer .fa-facebook:hover, footer .fa-instagram:hover 
 @media (min-width: 768px) {
   .navbar-nav .nav-item .nav-link {
     border-top: none;
+  }
+
+  .mt-3:active {
+    border: none !important;
+    box-shadow: none !important;
   }
 
   .main-index {
